@@ -3,7 +3,7 @@ import React from 'react';
 const Project = () => {
   return (
     <div name="Project" className="my-32 px-4 md:px-40">
-      <h1 className="text-4xl font-bold text-center text-white mb-12">Projects</h1>
+      <h1 className="text-4xl font-bold text-center text-emerald-600 mb-12">Projects</h1>
 
       {/* Musiqo Project */}
       <section className="flex flex-col lg:flex-row items-center gap-10 mb-20 bg-gray-800 p-8 rounded-lg shadow-lg">
