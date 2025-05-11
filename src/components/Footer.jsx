@@ -1,48 +1,69 @@
 import React from "react";
-import { FaSquareFacebook } from "react-icons/fa6";
+import { FaSquareFacebook, FaGithub } from "react-icons/fa6";
 import { FiInstagram } from "react-icons/fi";
 import { FaLinkedin } from "react-icons/fa";
-import { FaGithub } from "react-icons/fa6";
-import {
-  FaFacebook,
-  FaTwitter,
-  FaInstagram,
-  FaLinkedinIn,
-} from "react-icons/fa6";
-function Footer() {
-  return (
-    <>
 
-      <footer className="py-12">
-        <div className="max-w-screen-2xl container mx-auto px-4 md:px-20">
-          <div className=" flex flex-col items-center justify-center">
-            <div className="flex space-x-4">
-            <ul className='flex gap-2 cursor-pointer'>
-                                    <li>
-                                        <a href="https://www.facebook.com/" target='_blank'><FaSquareFacebook className='text-xl md:text-3xl hover:scale-110 duration-200' /></a>
-                                        </li>
-                                    <li>
-                                        <a href="https://www.instagram.com/?utm_source=pwa_homescreen&__pwa=1"target='_blank'><FiInstagram className='text-xl md:text-3xl hover:scale-110 duration-200' /></a>
-                                        </li>
-                                    <li>
-                                        <a href="https://www.linkedin.com/in/rupesh-kumar-meher-59a1b3269/"target='_blank'>
-                                        <FaLinkedin className='text-xl md:text-3xl hover:scale-110 duration-200' /></a></li>
-                                    <li>
-                                        <a href="https://github.com/Rup-23"target='_blank'>
-                                         <FaGithub className='text-xl md:text-3xl hover:scale-110 duration-200' /></a></li>
-                                </ul>
-            </div>
-            <div className="mt-8 border-t border-gray-700 pt-8 flex flex-col items-center">
-              <p className="text-sm">
-                &copy; 2024 Your Company. All rights reserved.
-              </p>
-              <p className="text-sm">Created with ❤️ by Rupesh</p>
-            </div>
+const Footer = () => {
+  return (
+    <footer className="bg-gray-950 text-white py-12 border-t border-gray-800">
+      <div className="max-w-screen-2xl mx-auto px-6 md:px-16">
+        <div className="flex flex-col items-center text-center">
+          
+          {/* Social Icons */}
+          <ul className="flex gap-6 mb-6">
+            <li>
+              <a
+                href="https://www.facebook.com/"
+                target="_blank"
+                rel="noreferrer"
+                className="group"
+              >
+                <FaSquareFacebook className="text-3xl text-gray-400 group-hover:text-emerald-400 transition-all duration-200" />
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.instagram.com/"
+                target="_blank"
+                rel="noreferrer"
+                className="group"
+              >
+                <FiInstagram className="text-3xl text-gray-400 group-hover:text-emerald-400 transition-all duration-200" />
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/rupesh-kumar-meher-59a1b3269/"
+                target="_blank"
+                rel="noreferrer"
+                className="group"
+              >
+                <FaLinkedin className="text-3xl text-gray-400 group-hover:text-emerald-400 transition-all duration-200" />
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://github.com/Rup-23"
+                target="_blank"
+                rel="noreferrer"
+                className="group"
+              >
+                <FaGithub className="text-3xl text-gray-400 group-hover:text-emerald-400 transition-all duration-200" />
+              </a>
+            </li>
+          </ul>
+
+          {/* Footer Text */}
+          <div className="space-y-1 text-gray-400 text-sm">
+            <p>&copy; 2024 RKM Portfolio. All rights reserved.</p>
+            <p>
+              Made with <span className="text-red-500">❤️</span> by Rupesh Kumar Meher
+            </p>
           </div>
         </div>
-      </footer>
-    </>
+      </div>
+    </footer>
   );
-}
+};
 
 export default Footer;

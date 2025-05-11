@@ -1,80 +1,82 @@
-import React from 'react'
+import React, { useState } from 'react';
 import { AiOutlineMenu } from "react-icons/ai";
 import { IoMdClose } from "react-icons/io";
-import { useState } from 'react';
 import { Link } from 'react-scroll';
 
 const Navbar = () => {
-    const [menu, setMenu] = useState(false)
-    const Navitems = [
-        {
-            id:1,
-            text:"Home"
-        },
-        {
-            id:2,
-            text:"About"
-        },
-        {
-            id:3,
-            text:"Project"
-        },
-        {
-            id:4,
-            text:"Contact"
-        },
-    ]
-    return (
-        <>
-            <div className="z-50 max-w-screen-2xl container mx-auto px-4 md:px-20 h-16 fixed top-0 left-0 right-0 bg-gray-900 text-white hover:shadow-[0_6px_15px_rgba(4,190,87,0.3)] transition-shadow duration-300">
-                <div className='flex justify-between items-center h-16'>
-                    <div className='flex space-x-2'>
-                        <h1 className='font-semibold text-xl cursor-pointer text-emerald-400'>RKM<p className='text-sm text-gray-400'>Web Developer</p></h1>
-                    </div>
-                    <div>
-                        <ul className='hidden md:flex space-x-8 text-xl'>
-                            {
-                                Navitems.map(({id,text}) =>(
-                                    <li className='hover:scale-105 duration-200 cursor-pointer hover:text-emerald-400' key={id}>
-                                        <Link to={text}
-                                        smooth={true}
-                                        duration={500}
-                                        offset={-70}
-                                        activeClass='active'
-                                        className='transition-colors duration-300'
-                                        >{text}</Link>
-                                    </li>
-                                ))
-                            }                       
-                        </ul>
-                        <div onClick={() => setMenu(!menu)} className='md:hidden text-white'>{menu ?<IoMdClose size={24} /> : <AiOutlineMenu size={24} /> }</div>
-                    </div>
-                </div>
+  const [menu, setMenu] = useState(false);
 
-                {/* Mobile navbar */}
-                {menu && (
-                    <div className='bg-gray-900 text-white'>
-                        <ul className='md:hidden text-xl flex flex-col items-center justify-center h-screen space-y-5 font-bold'>
-                        {  Navitems.map(({id,text}) =>(
-                                    <li className='hover:scale-105 duration-200 cursor-pointer hover:text-emerald-400' key={id}> <Link
-                                    onClick={() => setMenu(!menu)}
-                                    to={text}
-                                    smooth={true}
-                                    duration={500}
-                                    offset={-70}
-                                    activeClass='active'
-                                    className='transition-colors duration-300'
-                                    >{text}</Link></li>
-                                )) } 
-                        </ul>
-                    </div>
-                )}
-            </div>
+  const Navitems = [
+    { id: 1, text: "Home" },
+    { id: 2, text: "About" },
+    { id: 3, text: "Project" },
+    { id: 4, text: "Contact" },
+  ];
 
-        </>
-    )
-}
+  return (
+    <>
+      <div className="z-50 fixed top-0 left-0 right-0 bg-gray-950/90 backdrop-blur-md shadow-md text-white transition-shadow duration-300">
+        <div className="max-w-screen-2xl mx-auto px-6 md:px-16 h-16 flex justify-between items-center">
+          
+          {/* Logo */}
+          <div className="flex flex-col cursor-pointer leading-tight">
+            <h1 className="font-bold text-2xl text-emerald-400">RKM</h1>
+            <p className="text-sm text-gray-200 font-light tracking-wider">Web Developer</p>
+          </div>
 
-export default Navbar
+          {/* Desktop Nav */}
+          <ul className="hidden md:flex space-x-10 text-base font-medium">
+            {Navitems.map(({ id, text }) => (
+              <li
+                key={id}
+                className="relative group cursor-pointer"
+              >
+                <Link
+                  to={text}
+                  smooth={true}
+                  duration={500}
+                  offset={-70}
+                  activeClass="active"
+                  className="text-gray-400 group-hover:text-emerald-400 transition-colors duration-300"
+                >
+                  {text}
+                </Link>
+                <span className="absolute left-0 -bottom-1 h-0.5 w-0 bg-emerald-400 transition-all duration-300 group-hover:w-full"></span>
+              </li>
+            ))}
+          </ul>
 
+          {/* Mobile Menu Icon */}
+          <div onClick={() => setMenu(!menu)} className="md:hidden text-gray-300 cursor-pointer z-50">
+            {menu ? <IoMdClose size={26} /> : <AiOutlineMenu size={26} />}
+          </div>
+        </div>
+      </div>
 
+      {/* Mobile Nav */}
+      {menu && (
+        <div className="md:hidden fixed top-0 left-0 w-full h-screen bg-gray-950/95 backdrop-blur-sm z-40">
+          <ul className="flex flex-col justify-center items-center h-full space-y-10 text-2xl font-semibold">
+            {Navitems.map(({ id, text }) => (
+              <li key={id}>
+                <Link
+                  onClick={() => setMenu(false)}
+                  to={text}
+                  smooth={true}
+                  duration={500}
+                  offset={-70}
+                  activeClass="active"
+                  className="text-gray-300 hover:text-emerald-400 transition-colors duration-300"
+                >
+                  {text}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </div>
+      )}
+    </>
+  );
+};
+
+export default Navbar;
