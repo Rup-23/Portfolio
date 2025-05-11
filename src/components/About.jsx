@@ -201,43 +201,50 @@ const About = () => {
           </div>
 
           <div className="relative">
-            <div className="absolute left-0 md:left-1/2 transform md:-translate-x-1/2 h-full w-1 bg-emerald-700/30"></div>
-            <div className="space-y-12">
-              {[
-                {
-                  title: "B.Tech in Computer Science",
-                  time: "2021 - 2025",
-                  desc: "Pursuing my bachelor's degree with focus on software development and computer science fundamentals.",
-                  reverse: false
-                },
-                {
-                  title: "Full Stack Development Course",
-                  time: "2023 - 2024",
-                  desc: "Completed comprehensive training in MERN stack development with hands-on project experience.",
-                  reverse: true
-                },
-                {
-                  title: "Freelance Web Developer",
-                  time: "2025 - Present",
-                  desc: "Working on various web development projects for clients, focusing on responsive and user-friendly interfaces.",
-                  reverse: false
-                }
-              ].map(({ title, time, desc, reverse }, i) => (
-                <div key={i} className={`flex flex-col md:flex-row${reverse ? "-reverse" : ""} items-center`}>
-                  <div className={`md:w-1/2 ${reverse ? "md:pl-12" : "md:pr-12 md:text-right"} mb-6 md:mb-0`}>
-                    <div className="bg-gray-800 p-5 rounded-2xl shadow-lg border border-gray-700 hover:border-emerald-500 transition-all duration-300">
-                      <h3 className="text-xl font-bold text-emerald-500">{title}</h3>
-                      <p className="text-gray-400 mt-1">{time}</p>
-                      <p className="mt-3">{desc}</p>
-                    </div>
-                  </div>
-                  <div className="md:w-1/2 flex md:justify-start">
-                    
-                  </div>
-                </div>
-              ))}
-            </div>
+  <div className="absolute left-0 md:left-1/2 transform md:-translate-x-1/2 h-full w-1 bg-emerald-700/30"></div>
+  <div className="space-y-12">
+    {[
+      {
+        title: "B.Tech in Computer Science",
+        time: "2021 - 2025",
+        desc: "Pursuing my bachelor's degree with focus on software development and computer science fundamentals.",
+        reverse: false
+      },
+      {
+        title: "Full Stack Development Course",
+        time: "2023 - 2024",
+        desc: "Completed comprehensive training in MERN stack development with hands-on project experience.",
+        reverse: true
+      },
+      {
+        title: "Freelance Web Developer",
+        time: "2025 - Present",
+        desc: "Working on various web development projects for clients, focusing on responsive and user-friendly interfaces.",
+        reverse: false
+      }
+    ].map(({ title, time, desc, reverse }, i) => (
+      <div
+        key={i}
+        className={`flex flex-col md:flex-row ${reverse ? "md:flex-row-reverse" : ""} items-center`}
+      >
+        <div
+          className={`md:w-1/2 ${
+            reverse ? "md:pl-12" : "md:pr-12 md:text-right"
+          } mb-6 md:mb-0`}
+        >
+          <div className="bg-gray-800 p-5 rounded-2xl shadow-lg border border-gray-700 hover:border-emerald-500 transition-all duration-300">
+            <h3 className="text-xl font-bold text-emerald-500">{title}</h3>
+            <p className="text-gray-400 mt-1">{time}</p>
+            <p className="mt-3">{desc}</p>
           </div>
+        </div>
+        <div className="md:w-1/2 flex md:justify-start">
+        </div>
+      </div>
+    ))}
+  </div>
+</div>
+
         </motion.div>
       </div>
     </div>
