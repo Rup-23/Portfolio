@@ -231,8 +231,8 @@ const About = () => {
                       <p className="mt-3">{desc}</p>
                     </div>
                   </div>
-                  <div className="md:w-1/2 flex justify-center md:justify-start">
-                    <div className="w-4 h-4 bg-emerald-500 rounded-full shadow shadow-emerald-500 z-10"></div>
+                  <div className="md:w-1/2 flex md:justify-start">
+                    
                   </div>
                 </div>
               ))}
