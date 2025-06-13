@@ -30,24 +30,23 @@ const Home = () => {
         <div className="absolute top-20 left-10 w-64 h-64 bg-emerald-500/10 rounded-full blur-3xl"></div>
         <div className="absolute bottom-20 right-10 w-96 h-96 bg-blue-500/5 rounded-full blur-3xl"></div>
         <div className="absolute top-1/3 right-1/4 w-32 h-32 bg-purple-500/5 rounded-full blur-xl"></div>
-        
+
         {/* Grid pattern overlay */}
         <div className="absolute inset-0 bg-grid-pattern opacity-5"></div>
       </div>
-      
+
       <div className="max-w-screen-xl container mx-auto px-6 md:px-8 lg:px-16 py-8 sm:py-12 md:py-16 relative z-10">
         <div className="flex flex-col md:flex-row items-center justify-between gap-8 md:gap-12">
 
           {/* Profile Image Section */}
-          <div 
-            className={`w-full md:w-2/5 order-1 md:order-2 mb-8 md:mb-0 transition-all duration-1000 transform ${
-              isVisible ? "translate-x-0 opacity-100" : "translate-x-10 opacity-0"
-            }`}
+          <div
+            className={`w-full md:w-2/5 order-1 md:order-2 mb-8 md:mb-0 transition-all duration-1000 transform ${isVisible ? "translate-x-0 opacity-100" : "translate-x-10 opacity-0"
+              }`}
           >
             <div className="relative mx-auto w-56 h-56 sm:w-64 sm:h-64 md:w-72 md:h-72 lg:w-80 lg:h-80">
               {/* Animated background glow */}
               <div className="absolute -inset-4 bg-gradient-to-r from-emerald-600 via-cyan-500 to-blue-600 rounded-full blur-xl opacity-30 animate-pulse"></div>
-              
+
               <div className="relative w-full h-full">
                 <div className="bg-gradient-to-r from-emerald-500 via-emerald-600 to-blue-500 rounded-full p-1 shadow-xl shadow-emerald-700/30 w-full h-full">
                   <div className="bg-gray-900 rounded-full p-1 w-full h-full backdrop-blur">
@@ -80,15 +79,14 @@ const Home = () => {
           </div>
 
           {/* Content Section */}
-          <div 
-            className={`w-full md:w-3/5 order-2 md:order-1 text-center md:text-left transition-all duration-1000 transform ${
-              isVisible ? "translate-x-0 opacity-100" : "-translate-x-10 opacity-0"
-            }`}
+          <div
+            className={`w-full md:w-3/5 order-2 md:order-1 text-center md:text-left transition-all duration-1000 transform ${isVisible ? "translate-x-0 opacity-100" : "-translate-x-10 opacity-0"
+              }`}
           >
             <div className="inline-block px-4 py-1 bg-gradient-to-r from-emerald-900/40 to-blue-900/40 backdrop-blur-lg text-emerald-500 rounded-full text-sm font-medium mb-4 border border-emerald-500/20">
               Full Stack Developer
             </div>
-            
+
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-white leading-tight mb-2">
               Hello, I'm <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 via-teal-400 to-blue-500">Rupesh Kumar Meher</span>
             </h1>
@@ -98,9 +96,9 @@ const Home = () => {
               <ReactTyped
                 className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-blue-500 font-semibold"
                 strings={[
-                  "Student", 
-                  "Programmer", 
-                  "Full Stack Web Developer", 
+                  "Student",
+                  "Programmer",
+                  "Full Stack Web Developer",
                 ]}
                 typeSpeed={70}
                 backSpeed={60}
@@ -109,20 +107,24 @@ const Home = () => {
             </div>
 
             <p className="mt-4 sm:mt-6 text-base sm:text-lg text-gray-300 leading-relaxed max-w-lg mx-auto md:mx-0">
-              I'm currently pursuing my B.Tech in Computer Science and Engineering, passionate about crafting 
-              elegant web solutions using modern technologies. I specialize in building full-stack applications 
+              I'm currently pursuing my B.Tech in Computer Science and Engineering, passionate about crafting
+              elegant web solutions using modern technologies. I specialize in building full-stack applications
               with the MERN stack and continuously expanding my skills.
             </p>
 
             <div className="mt-8 sm:mt-10 flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
-              
-              <a 
-                href="https://github.com/Rup-23" 
+
+              <a
+                href="https://github.com/Rup-23"
                 className="px-8 py-3 bg-gray-800/50 backdrop-blur-lg text-white font-medium rounded-lg border border-emerald-500/30 hover:border-emerald-500/60 hover:bg-gray-700/50 transition duration-300 text-center relative overflow-hidden group"
               >
-                <span className="relative z-10">View My Work</span>
+                <span className="relative z-10">VIEW MY WORK</span>
                 <span className="absolute inset-0 bg-gradient-to-r from-gray-700/50 to-gray-800/50 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300 ease-in-out"></span>
               </a>
+              <a href="https://drive.google.com/file/d/1K3EcZk5vpJchmHtEqFQvaj4SzaT_CV8W/view?usp=drive_link" className="px-8 py-3 bg-gray-800/50 backdrop-blur-lg text-white font-medium rounded-lg border border-emerald-500/30 hover:border-emerald-500/60 hover:bg-gray-700/50 transition duration-300 text-center relative overflow-hidden group" target="_blank" rel="noopener noreferrer">
+                 <span className="relative z-10">DOWNLOAD CV</span> 
+                 </a>
+
             </div>
 
             {/* Social Media Links */}
@@ -154,12 +156,12 @@ const Home = () => {
           </div>
 
           <div className="flex justify-center gap-4 sm:gap-6 md:gap-8 lg:gap-10 mt-8 sm:mt-10 flex-wrap">
-            {[{icon: <SiMongodb className="text-green-500 group-hover:text-white text-3xl" />, label: 'MongoDB'},
-              {icon: <SiExpress className="text-gray-300 group-hover:text-white text-3xl" />, label: 'Express'},
-              {icon: <FaReact className="text-blue-400 group-hover:text-white text-3xl" />, label: 'React'},
-              {icon: <IoLogoNodejs className="text-green-600 group-hover:text-white text-3xl" />, label: 'Node.js'},
-              {icon: <SiTailwindcss className="text-cyan-400 group-hover:text-white text-3xl" />, label: 'Tailwind'},
-              {icon: <SiJavascript className="text-yellow-400 group-hover:text-white text-3xl" />, label: 'JavaScript'}].map((tech, i) => (
+            {[{ icon: <SiMongodb className="text-green-500 group-hover:text-white text-3xl" />, label: 'MongoDB' },
+            { icon: <SiExpress className="text-gray-300 group-hover:text-white text-3xl" />, label: 'Express' },
+            { icon: <FaReact className="text-blue-400 group-hover:text-white text-3xl" />, label: 'React' },
+            { icon: <IoLogoNodejs className="text-green-600 group-hover:text-white text-3xl" />, label: 'Node.js' },
+            { icon: <SiTailwindcss className="text-cyan-400 group-hover:text-white text-3xl" />, label: 'Tailwind' },
+            { icon: <SiJavascript className="text-yellow-400 group-hover:text-white text-3xl" />, label: 'JavaScript' }].map((tech, i) => (
               <div key={i} className="tech-card group">
                 <div className="tech-icon-container">
                   {tech.icon}
