@@ -121,9 +121,14 @@ const Home = () => {
                 <span className="relative z-10">VIEW MY WORK</span>
                 <span className="absolute inset-0 bg-gradient-to-r from-gray-700/50 to-gray-800/50 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300 ease-in-out"></span>
               </a>
-              <a href="https://drive.google.com/file/d/1K3EcZk5vpJchmHtEqFQvaj4SzaT_CV8W/view?usp=drive_link" className="px-8 py-3 bg-gray-800/50 backdrop-blur-lg text-white font-medium rounded-lg border border-emerald-500/30 hover:border-emerald-500/60 hover:bg-gray-700/50 transition duration-300 text-center relative overflow-hidden group" target="_blank" rel="noopener noreferrer">
-                 <span className="relative z-10">DOWNLOAD CV</span> 
-                 </a>
+
+              <a href="https://drive.google.com/uc?export=download&id=1K3EcZk5vpJchmHtEqFQvaj4SzaT_CV8W"
+                className="px-8 py-3 bg-gray-800/50 backdrop-blur-lg text-white font-medium rounded-lg border border-emerald-500/30 hover:border-emerald-500/60 hover:bg-gray-700/50 transition duration-300 text-center relative overflow-hidden group"
+                target="_blank" rel="noopener noreferrer">
+                <span className="relative z-10">DOWNLOAD CV</span>
+              </a>
+
+
 
             </div>
 
