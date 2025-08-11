@@ -120,7 +120,7 @@ const Project = () => {
   };
 
   return (
-    <div id="projects" className="w-full bg-gradient-to-b from-gray-950 via-gray-900 to-gray-950 py-24">
+    <div id="Projects" className="w-full bg-gradient-to-b from-gray-950 via-gray-900 to-gray-950 py-24">
       <div className="max-w-screen-xl mx-auto px-6 md:px-12">
         <div className="text-center mb-16">
           <motion.div

@@ -167,8 +167,10 @@ const Home = () => {
             { icon: <IoLogoNodejs className="text-green-600 group-hover:text-white text-3xl" />, label: 'Node.js' },
             { icon: <SiTailwindcss className="text-cyan-400 group-hover:text-white text-3xl" />, label: 'Tailwind' },
             { icon: <SiJavascript className="text-yellow-400 group-hover:text-white text-3xl" />, label: 'JavaScript' }].map((tech, i) => (
-              <div key={i} className="tech-card group">
+              <div key={i} className="tech-card group flex flex-col items-center justify-center">
                 <div className="tech-icon-container">
+
+   
                   {tech.icon}
                 </div>
                 <span className="tech-label">{tech.label}</span>
@@ -226,3 +228,4 @@ const Home = () => {
 };
 
 export default Home;
+

@@ -9,7 +9,7 @@ const Navbar = () => {
   const Navitems = [
     { id: 1, text: "Home" },
     { id: 2, text: "About" },
-    { id: 3, text: "Project" },
+    { id: 3, text: "Projects" },
     { id: 4, text: "Contact" },
   ];
 
