@@ -252,14 +252,12 @@
 
 // export default About;
 
-
-
-
 "use client";
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 
 const About = () => {
+  // eslint-disable-next-line no-unused-vars
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
@@ -377,12 +375,12 @@ const About = () => {
 
           {/* Text Content */}
           <motion.div
-            className="lg:w-3/5"
-            initial={{ opacity: 0, x: 50 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8, delay: 0.2 }}
-          >
+      className="lg:w-3/5"
+      initial={{ opacity: 0, x: 10 }}
+      whileInView={{ opacity: 1, x: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.8, delay: 0.2 }}
+    >
             <div className="bg-gray-900/50 p-6 md:p-8 rounded-2xl border border-gray-700 shadow-xl backdrop-blur-sm">
               <h3 className="text-2xl font-bold mb-4 text-pink-500">
                 My Journey
@@ -396,7 +394,7 @@ const About = () => {
                   , with a passionate focus on full-stack development.
                 </p>
                 <p>
-                  The path into coding wasn't always smooth—I faced numerous
+                  The path into coding was not always smooth—I faced numerous
                   challenges initially... but my{" "}
                   <span className="text-pink-500 font-medium">
                     persistence and determination
@@ -404,7 +402,7 @@ const About = () => {
                   carried me through.
                 </p>
                 <p>
-                  Through countless hours of practice, I've gained not only
+                  Through countless hours of practice, I have gained not only
                   technical skills but also{" "}
                   <span className="text-pink-500 font-medium">
                     resilience and creativity
