@@ -69,7 +69,7 @@
 // export default Footer;
 
 "use client";
-import React from "react";
+// import React from "react";
 import { FaSquareFacebook, FaGithub } from "react-icons/fa6";
 import { FiInstagram } from "react-icons/fi";
 import { FaLinkedin } from "react-icons/fa";

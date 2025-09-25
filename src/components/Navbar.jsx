@@ -123,7 +123,6 @@ const Navbar = () => {
               Fullstack Developer
             </p>
           </motion.div>
-
           {/* Desktop Nav */}
           <ul className="hidden md:flex space-x-10 text-base font-medium">
             {Navitems.map(({ id, text }, index) => (

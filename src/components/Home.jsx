@@ -354,7 +354,7 @@ const Home = () => {
               variants={fadeUp}
               className="text-4xl sm:text-5xl md:text-6xl font-bold text-white leading-tight mb-2"
             >
-              Hello, I'm{" "}
+              Hello, I&#39;m{" "}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-slate-300 via-pink-500 to-violet-600">
                 Rupesh Kumar Meher
               </span>
@@ -364,7 +364,7 @@ const Home = () => {
               variants={fadeUp}
               className="mt-4 sm:mt-6 text-xl sm:text-2xl md:text-3xl font-medium text-gray-300 flex justify-center md:justify-start items-center h-12"
             >
-              <span className="mr-2">I'm a</span>
+              <span className="mr-2">I&apos;m a</span>
               <ReactTyped
                 className="text-transparent bg-clip-text bg-gradient-to-r from-slate-300 to-pink-500 font-semibold"
                 strings={["Student", "Programmer", "Full Stack Web Developer"]}
@@ -378,7 +378,7 @@ const Home = () => {
               variants={fadeUp}
               className="mt-4 sm:mt-6 text-base sm:text-lg text-gray-300 leading-relaxed max-w-lg mx-auto md:mx-0"
             >
-              I'm currently pursuing my B.Tech in Computer Science and
+              I&#39;m currently pursuing my B.Tech in Computer Science and
               Engineering, passionate about crafting elegant web solutions using
               modern technologies. I specialize in building full-stack
               applications with the MERN stack and continuously expanding my
@@ -501,7 +501,7 @@ const Home = () => {
       </div>
 
       {/* Extra Styles */}
-      <style jsx>{`
+      <style>{`
         .bg-grid-pattern {
           background-size: 30px 30px;
           background-image: linear-gradient(

@@ -98,7 +98,7 @@
 
 
 "use client";
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 
 const Contact = () => {
@@ -153,7 +153,7 @@ const Contact = () => {
             <div>
               <label className="text-sm font-medium text-gray-300">Name</label>
               <input
-                autocomplete="off"
+                autoComplete="off"
                 type="text"
                 name="text"
                 required
@@ -165,7 +165,7 @@ const Contact = () => {
             <div>
               <label className="text-sm font-medium text-gray-300">Email</label>
               <input
-                autocomplete="off"
+                autoComplete="off"
                 type="email"
                 name="email"
                 required
@@ -198,7 +198,7 @@ const Contact = () => {
       </div>
 
       {/* Grid Background Pattern */}
-      <style jsx>{`
+      <style >{`
         .bg-grid-pattern {
           background-size: 30px 30px;
           background-image: linear-gradient(
