@@ -399,7 +399,7 @@ const Home = () => {
               </a>
 
               <a
-                href="https://drive.google.com/uc?export=download&id=1K3EcZk5vpJchmHtEqFQvaj4SzaT_CV8W"
+                href="https://drive.google.com/file/d/1VbFwRUQEz2H0mRHUCVzTURg4Pfz3Fjrk/view"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="px-8 py-3 bg-gray-800/50 backdrop-blur-lg text-white font-medium rounded-lg border border-pink-500/30 hover:border-pink-500/60 hover:bg-gray-700/50 transition duration-300 text-center relative overflow-hidden group"
