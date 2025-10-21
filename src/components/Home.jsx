@@ -170,7 +170,7 @@
 //               <div key={i} className="tech-card group flex flex-col items-center justify-center">
 //                 <div className="tech-icon-container">
 
-   
+
 //                   {tech.icon}
 //                 </div>
 //                 <span className="tech-label">{tech.label}</span>
@@ -187,7 +187,7 @@
 //             linear-gradient(to right, rgba(255, 255, 255, 0.05) 1px, transparent 1px),
 //             linear-gradient(to bottom, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
 //         }
-        
+
 //         .tech-card {
 //           @apply flex flex-col items-center justify-center p-4 md:p-5 rounded-xl cursor-pointer transition-all duration-300;
 //           @apply bg-gradient-to-b from-gray-800/80 to-gray-900/80 backdrop-blur-sm;
@@ -196,29 +196,29 @@
 //           width: 100px;
 //           height: 100px;
 //         }
-        
+
 //         @media (min-width: 640px) {
 //           .tech-card { width: 120px; height: 120px; }
 //         }
-        
+
 //         @media (min-width: 768px) {
 //           .tech-card { width: 130px; height: 130px; }
 //         }
-        
+
 //         .tech-icon-container {
 //           @apply flex items-center justify-center mb-3;
 //           height: 42px;
 //         }
-        
+
 //         .tech-label {
 //           @apply mt-2 text-sm sm:text-base font-medium text-gray-300 group-hover:text-white;
 //         }
-        
+
 //         @keyframes spin-slow {
 //           from { transform: rotate(0deg); }
 //           to { transform: rotate(360deg); }
 //         }
-        
+
 //         .animate-spin-slow {
 //           animation: spin-slow 12s linear infinite;
 //         }
@@ -247,6 +247,13 @@ const fadeUp = {
     transition: { delay: i * 0.2, duration: 0.7, ease: "easeOut" },
   }),
 };
+
+const socialLinks = [
+  { Icon: FaSquareFacebook, href: "https://www.facebook.com/", label: "Facebook" },
+  { Icon: FiInstagram, href: "https://www.instagram.com/", label: "Instagram" },
+  { Icon: FaLinkedin, href: "https://www.linkedin.com/in/rupesh-kumar-meher-59a1b3269/", label: "LinkedIn" },
+  { Icon: FaGithub, href: "https://github.com/Rup-23", label: "GitHub" },
+];
 
 const Home = () => {
   return (
@@ -345,7 +352,7 @@ const Home = () => {
           >
             <motion.div
               variants={fadeUp}
-              className="inline-block px-4 py-1 bg-gradient-to-r from-violet-900/40 to-pink-900/40 backdrop-blur-lg text-emerald-400 rounded-full text-sm font-medium mb-4 border border-emerald-500/20"
+              className="inline-block px-4 py-1 bg-gradient-to-r from-violet-900/40 to-pink-900/40 backdrop-blur-lg text-pink-400 rounded-full text-sm font-medium mb-4 border border-emerald-500/20"
             >
               Full Stack Developer
             </motion.div>
@@ -355,7 +362,7 @@ const Home = () => {
               className="text-4xl sm:text-5xl md:text-6xl font-bold text-white leading-tight mb-2"
             >
               Hello, I&#39;m{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-slate-300 via-pink-500 to-violet-600">
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-slate-300 via-pink-600 to-violet-700">
                 Rupesh Kumar Meher
               </span>
             </motion.h1>
@@ -407,29 +414,28 @@ const Home = () => {
                 <span className="relative z-10">DOWNLOAD CV</span>
               </a>
             </motion.div>
-
-            {/* Socials */}
             <motion.div variants={fadeUp} className="mt-10 sm:mt-12">
-              <h2 className="font-medium text-lg text-gray-300 mb-4">
-                Connect with me
-              </h2>
+              <h2 className="font-medium text-lg text-gray-300 mb-4">Connect with me</h2>
+
               <div className="flex justify-center md:justify-start gap-5 mt-2">
-                {[FaSquareFacebook, FiInstagram, FaLinkedin, FaGithub].map(
-                  (Icon, i) => (
-                    <motion.a
-                      key={i}
-                      whileHover={{ scale: 1.15 }}
-                      className="w-10 h-10 rounded-full bg-gray-800/70 backdrop-blur-sm flex items-center justify-center border border-gray-700 hover:border-pink-500 hover:text-pink-400 transition-all duration-300"
-                      href=""
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      <Icon className="text-xl" />
-                    </motion.a>
-                  )
-                )}
+                {socialLinks.map(({ Icon, href, label }) => (
+                  <motion.a
+                    key={label}
+                    href={href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label={label}
+                    title={label}
+                    whileHover={{ scale: 1.15 }}
+                    className="w-10 h-10 rounded-full bg-gray-800/70 backdrop-blur-sm flex items-center justify-center border border-gray-700 hover:border-pink-500 hover:text-pink-400 transition-all duration-300"
+                  >
+                    <Icon className="text-xl" />
+                  </motion.a>
+                ))}
               </div>
             </motion.div>
+
+
           </motion.div>
         </div>
 
