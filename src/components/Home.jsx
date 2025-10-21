@@ -352,7 +352,7 @@ const Home = () => {
           >
             <motion.div
               variants={fadeUp}
-              className="inline-block px-4 py-1 bg-gradient-to-r from-violet-900/40 to-pink-900/40 backdrop-blur-lg text-pink-400 rounded-full text-sm font-medium mb-4 border border-emerald-500/20"
+              className="inline-block px-4 py-1 bg-gradient-to-r from-violet-900/40 to-pink-900/40 backdrop-blur-lg text-pink-400 rounded-full text-sm font-medium mb-4 border border-pink-500/20"
             >
               Full Stack Developer
             </motion.div>
@@ -374,7 +374,7 @@ const Home = () => {
               <span className="mr-2">I&apos;m a</span>
               <ReactTyped
                 className="text-transparent bg-clip-text bg-gradient-to-r from-slate-300 to-pink-500 font-semibold"
-                strings={["Student", "Programmer", "Full Stack Web Developer"]}
+                strings={["Student", "Programmer", "Web Developer"]}
                 typeSpeed={70}
                 backSpeed={60}
                 loop
@@ -383,11 +383,11 @@ const Home = () => {
 
             <motion.p
               variants={fadeUp}
-              className="mt-4 sm:mt-6 text-base sm:text-lg text-gray-300 leading-relaxed max-w-lg mx-auto md:mx-0"
+              className="mt-4 sm:mt-6 text-base sm:text-lg text-gray-300 leading-relaxed max-w-lg mx-auto md:mx-0 text-justify"
             >
               I&#39;m currently pursuing my B.Tech in Computer Science and
-              Engineering, passionate about crafting elegant web solutions using
-              modern technologies. I specialize in building full-stack
+              Engineering, passionate about crafting elegant web solutions 
+              using modern technologies. I specialize in building full-stack
               applications with the MERN stack and continuously expanding my
               skills.
             </motion.p>
@@ -451,7 +451,7 @@ const Home = () => {
             <h2 className="text-2xl sm:text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 via-pink-500 to-violet-600">
               Technologies I Work With
             </h2>
-            <div className="w-24 h-1 bg-gradient-to-r from-emerald-500 via-pink-500 to-violet-600 mx-auto mt-3"></div>
+            <div className="w-24 h-1 bg-gradient-to-r from-pink-700 via-pink-500 to-violet-700 mx-auto mt-3"></div>
           </div>
 
           <div className="flex justify-center gap-4 sm:gap-6 md:gap-8 lg:gap-10 mt-8 sm:mt-10 flex-wrap">

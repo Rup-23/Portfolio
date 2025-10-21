@@ -344,10 +344,10 @@ const About = () => {
           <h2 className="text-sm uppercase tracking-widest font-semibold">
             Get To Know
           </h2>
-          <h1 className="text-4xl md:text-5xl text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 via-pink-500 to-violet-500 font-bold mt-2">
+          <h1 className="text-4xl md:text-5xl text-transparent bg-clip-text bg-gradient-to-r from-violet-800 via-pink-500 to-violet-500 font-bold mt-2">
             About Me
           </h1>
-          <div className="w-24 h-1 bg-gradient-to-r from-emerald-500 to-pink-500 mx-auto mt-4 rounded-full"></div>
+          <div className="w-24 h-1 bg-gradient-to-r from-violet-800-500 to-pink-500 mx-auto mt-4 rounded-full"></div>
         </motion.div>
 
         {/* Main Content */}
@@ -361,8 +361,8 @@ const About = () => {
             transition={{ duration: 0.8 }}
           >
             <div className="relative group">
-              <div className="absolute -inset-2 bg-gradient-to-br from-emerald-600 via-pink-600 to-violet-700 rounded-2xl opacity-60 blur-lg group-hover:opacity-100 transition duration-1000"></div>
-              <div className="relative bg-gray-900 p-2 rounded-2xl shadow-2xl border border-gray-700 group-hover:border-emerald-500 transition">
+              <div className="absolute -inset-2 bg-gradient-to-br from-violet-600 via-pink-600 to-violet-700 rounded-2xl opacity-60 blur-lg group-hover:opacity-100 transition duration-1000"></div>
+              <div className="relative bg-gray-900 p-2 rounded-2xl shadow-2xl border border-gray-700 group-hover:border-pink-500 transition">
                 <img
                   src="About.png"
                   alt="About Me"
@@ -381,7 +381,7 @@ const About = () => {
       viewport={{ once: true }}
       transition={{ duration: 0.8, delay: 0.2 }}
     >
-            <div className="bg-gray-900/50 p-6 md:p-8 rounded-2xl border border-gray-700 shadow-xl backdrop-blur-sm">
+            <div className="bg-gray-900/50 p-6 md:p-8 rounded-2xl border border-gray-700 shadow-xl backdrop-blur-sm text-justify">
               <h3 className="text-2xl font-bold mb-4 text-pink-500">
                 My Journey
               </h3>
@@ -395,7 +395,7 @@ const About = () => {
                 </p>
                 <p>
                   The path into coding was not always smooth—I faced numerous
-                  challenges initially... but my{" "}
+                  challenges initially but my{" "}
                   <span className="text-pink-500 font-medium">
                     persistence and determination
                   </span>{" "}
@@ -421,7 +421,7 @@ const About = () => {
                   ["10+", "Projects Completed"],
                   ["15+", "Technologies"],
                   ["500+", "Hours Coding"],
-                  ["2+", "Years Learning"],
+                  ["3+", "Years Learning"],
                 ].map(([count, label], i) => (
                   <motion.div
                     key={i}
@@ -453,10 +453,10 @@ const About = () => {
             <h2 className="text-sm uppercase tracking-widest font-semibold">
               What I Can Do
             </h2>
-            <h1 className="text-4xl text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 via-pink-500 to-violet-500 font-bold mt-2">
+            <h1 className="text-4xl text-transparent bg-clip-text bg-gradient-to-r from-violet-400 via-pink-500 to-violet-500 font-bold mt-2">
               My Skills
             </h1>
-            <div className="w-16 h-1 bg-gradient-to-r from-emerald-500 to-pink-500 mx-auto mt-4 rounded-full"></div>
+            <div className="w-16 h-1 bg-gradient-to-r from-pink-500 to-violet-700 mx-auto mt-4 rounded-full"></div>
           </div>
 
           <div className="space-y-16">
@@ -508,11 +508,11 @@ const About = () => {
             <h1 className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 via-pink-500 to-violet-400 mt-2">
               Education & Experience
             </h1>
-            <div className="w-20 h-1 bg-gradient-to-r from-emerald-500 to-pink-500 mx-auto mt-4 rounded-full"></div>
+            <div className="w-20 h-1 bg-gradient-to-r from-violet-700 to-pink-500 mx-auto mt-4 rounded-full"></div>
           </div>
 
           <div className="relative">
-            <div className="absolute left-0 md:left-1/2 transform md:-translate-x-1/2 h-full w-1 bg-gradient-to-b from-emerald-600/40 via-pink-500/40 to-violet-600/40"></div>
+            <div className="absolute left-0 md:left-1/2 transform md:-translate-x-1/2 h-full w-1 bg-gradient-to-b from-blue-600/40 via-pink-500/40 to-violet-600/40"></div>
             <div className="space-y-12">
               {[
                 {

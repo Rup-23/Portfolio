@@ -269,13 +269,13 @@
 // export default Project;
 
 
-import React, { useState, useEffect } from 'react';
+import  { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { BsGithub, BsGlobe2 } from 'react-icons/bs';
 import { FiArrowUpRight } from 'react-icons/fi';
 import { FaReact, FaNodeJs, FaHtml5, FaCss3Alt } from 'react-icons/fa';
 import { SiJavascript, SiTailwindcss, SiExpress, SiMongodb, SiNextdotjs } from 'react-icons/si';
-import { div } from 'framer-motion/client';
+// import { div } from 'framer-motion/client';
 
 const Project = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -395,7 +395,7 @@ const Project = () => {
           <h1 className="text-4xl md:text-5xl font-bold mt-2 text-transparent bg-clip-text bg-gradient-to-r from-pink-400 via-violet-400 to-green-400">
             Featured Projects
           </h1>
-          <div className="w-28 h-1 bg-gradient-to-r from-pink-500 to-green-500 mx-auto mt-4 rounded-full"></div>
+          <div className="w-28 h-1 bg-gradient-to-r from-pink-500 to-violet-700 mx-auto mt-4 rounded-full"></div>
           <p className="max-w-xl mx-auto mt-6 text-gray-400">
             Explore my highlighted development projects where I applied creativity, problem-solving, and modern tech.
           </p>

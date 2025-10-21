@@ -137,7 +137,7 @@ const Contact = () => {
             Let’s collaborate! Whether you have an idea, a project, or just want
             to say hi — drop me a message, I’ll get back to you soon 🚀
           </p>
-          <div className="w-24 h-1 bg-gradient-to-r from-fuchsia-500 to-emerald-400 mx-auto mt-4 rounded-full"></div>
+          <div className="w-24 h-1 bg-gradient-to-r from-fuchsia-500 to-violet-400 mx-auto mt-4 rounded-full"></div>
         </motion.div>
 
         {/* Form */}
