@@ -383,13 +383,9 @@ const Home = () => {
 
             <motion.p
               variants={fadeUp}
-              className="mt-4 sm:mt-6 text-base sm:text-lg text-gray-300 leading-relaxed max-w-lg mx-auto md:mx-0 text-justify"
+              className="mt-4 sm:mt-6 text-base sm:text-lg text-gray-300 leading-relaxed max-w-lg mx-auto md:mx-0 text-left"
             >
-              I&#39;m currently pursuing my B.Tech in Computer Science and
-              Engineering, passionate about crafting elegant web solutions 
-              using modern technologies. I specialize in building full-stack
-              applications with the MERN stack and continuously expanding my
-              skills.
+              I&#39;m Recently graduated with a B.Tech in Computer Science and Engineering, passionate about crafting elegant web solutions using modern technologies. I specialize in building full-stack applications with the MERN stack and Next.js, with a keen interest in creating intuitive designs in CANVA and continuously expanding my skills and exploring new technologies to build impactful digital experiences.
             </motion.p>
 
             {/* Buttons */}

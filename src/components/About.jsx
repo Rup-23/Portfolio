@@ -381,20 +381,20 @@ const About = () => {
       viewport={{ once: true }}
       transition={{ duration: 0.8, delay: 0.2 }}
     >
-            <div className="bg-gray-900/50 p-6 md:p-8 rounded-2xl border border-gray-700 shadow-xl backdrop-blur-sm text-justify">
+            <div className="bg-gray-900/50 p-6 md:p-8 rounded-2xl border border-gray-700 shadow-xl backdrop-blur-sm text-left">
               <h3 className="text-2xl font-bold mb-4 text-pink-500">
                 My Journey
               </h3>
               <div className="text-gray-300 space-y-4 leading-relaxed">
                 <p>
-                  I am currently pursuing my{" "}
+                  I am Recently graduated with a{" "}
                   <span className="text-pink-500 font-medium">
                     B.Tech in Computer Science and Engineering
                   </span>
-                  , with a passionate focus on full-stack development.
+                  , and a passionate focus on full-stack development.
                 </p>
                 <p>
-                  The path into coding was not always smooth—I faced numerous
+                  The path into coding was not always smooth, I faced numerous
                   challenges initially but my{" "}
                   <span className="text-pink-500 font-medium">
                     persistence and determination
