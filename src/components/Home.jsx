@@ -341,7 +341,7 @@ const Home = () => {
               </a>
 
               <a
-                href="https://drive.google.com/file/d/1VbFwRUQEz2H0mRHUCVzTURg4Pfz3Fjrk/view"
+                href="https://drive.google.com/file/d/1f6suRyPCi8uxhyiI9G7Swxm53GjwuOz6/view?usp=sharing"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="px-8 py-3 rounded-lg font-medium border border-slate-600 bg-slate-800/50 hover:border-indigo-500/40 hover:shadow-lg hover:shadow-indigo-500/10 transition active:scale-95"
