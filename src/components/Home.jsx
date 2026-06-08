@@ -325,7 +325,7 @@ const Home = () => {
 
             <p className="mt-6 text-slate-300 leading-relaxed md:leading-loose max-w-xl mx-auto md:mx-0">
               B.Tech graduate in Computer Science & Engineering with a strong
-              interest in building scalable, elegant, and user-focused web
+              interest in building scalable, elegant, and user focused web
               applications. I specialize in the MERN stack and Next.js, with a
               clear emphasis on clean UI, smooth interactions, and continuous
               growth as an engineer.
@@ -341,7 +341,7 @@ const Home = () => {
               </a>
 
               <a
-                href="https://drive.google.com/file/d/19eiF6509rzUZTJtZ3g7VPwTeM38-Mr8j/view?usp=sharing"
+                href="https://drive.google.com/file/d/1gr1zH1e8dh89Z0rvrhWgE0B_SwX7_yVY/view?usp=sharing"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="px-8 py-3 rounded-lg font-medium border border-slate-600 bg-slate-800/50 hover:border-indigo-500/40 hover:shadow-lg hover:shadow-indigo-500/10 transition active:scale-95"
